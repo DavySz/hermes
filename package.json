@@ -2,20 +2,34 @@
   "name": "hermes",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
+    "web": "expo start --web",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "prepare": "husky"
   },
   "dependencies": {
+    "@types/react": "~18.2.79",
     "expo": "~51.0.9",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.1"
+    "react-native": "0.74.1",
+    "typescript": "~5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/compat": "^1.0.3",
+    "@eslint/js": "^9.4.0",
+    "eslint": "9.x",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.3.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "typescript-eslint": "^7.11.0"
   },
   "private": true
 }
